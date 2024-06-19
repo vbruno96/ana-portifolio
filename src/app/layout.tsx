@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, IBM_Plex_Sans } from 'next/font/google'
 import './globals.css'
+import Sidebar from './components/Sidebar'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -24,8 +25,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${ibmFlexSans.variable}`}>
-      <body className="font-inter">{children}</body>
+    <html
+      lang="en"
+      className={`${inter.variable} ${ibmFlexSans.variable} antialiased`}
+    >
+      <body className="font-inter">
+        <Sidebar />
+        {children}
+      </body>
     </html>
   )
 }
