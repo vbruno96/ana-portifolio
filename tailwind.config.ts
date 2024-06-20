@@ -10,7 +10,7 @@ const config: Config = {
     colors: {
       pink: '#EAC5DD',
       purple: '#9376B1',
-      blue: '#3E2682',
+      blue: '#3D2683',
       brown: '#A9948F',
       white: '#FFF',
       black: '#141313',
