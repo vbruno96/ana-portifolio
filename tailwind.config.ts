@@ -15,6 +15,7 @@ const config: Config = {
       white: '#FFF',
       black: '#141313',
       'off-white': '#EFECE3',
+      transparent: 'transparent',
     },
     fontSize: {
       xs: ['0.75rem', '1.375rem'],
