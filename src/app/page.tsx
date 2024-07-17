@@ -24,7 +24,7 @@ export default function Home() {
           href="/contact"
           className="rounded-md bg-blue px-10 py-4 text-white transition-colors hover:bg-purple"
         >
-          Let's talk with me
+          Let&apos;s talk with me
         </Link>
         <div className="mt-16 flex items-center gap-12 text-lg font-medium text-black">
           <Link href="tel:55319987281657" className="flex items-center gap-3">

@@ -29,19 +29,19 @@ export default function Contact() {
           </span>
           <div className="flex flex-wrap gap-11">
             <input
-              className="bg-transparent h-8 flex-1 border-b border-white pb-2 font-medium text-white placeholder:uppercase placeholder:text-white"
+              className="h-8 flex-1 border-b border-white bg-transparent pb-2 font-medium text-white placeholder:uppercase placeholder:text-white"
               type="text"
               placeholder="Name"
             />
             <input
-              className="bg-transparent h-8 flex-1 border-b border-white pb-2 font-medium text-white placeholder:uppercase placeholder:text-white"
+              className="h-8 flex-1 border-b border-white bg-transparent pb-2 font-medium text-white placeholder:uppercase placeholder:text-white"
               type="email"
               placeholder="Email"
             />
           </div>
           <div className="space-y-4">
             <textarea
-              className="bg-transparent block h-20 w-full flex-1 border-b border-white pb-2 font-medium text-white placeholder:uppercase placeholder:text-white"
+              className="block h-20 w-full flex-1 border-b border-white bg-transparent pb-2 font-medium text-white placeholder:uppercase placeholder:text-white"
               name=""
               id=""
               placeholder="Message"

@@ -1,6 +1,6 @@
 'use client'
 
-import { ChangeEvent, useRef, useState } from 'react'
+import { useRef } from 'react'
 import { FiLink } from 'react-icons/fi'
 
 interface InputFileProps {
@@ -8,22 +8,22 @@ interface InputFileProps {
 }
 
 export function InputFile({ placeholder }: InputFileProps) {
-  const [files, setFiles] = useState([]) as FileList
+  /* const [files, setFiles] = useState<string>('') */
 
   const inputFileRef = useRef<HTMLInputElement>(null)
-
-  console.log(files !== null)
 
   function handleOpenAttachFile() {
     inputFileRef.current?.click()
   }
 
-  function handleInputFileChange(event: ChangeEvent<HTMLInputElement>) {
-    console.log(event.target.files)
-    if (event.target.files) {
-      setFiles(event.target.files)
+  /* function handleInputFileChange(event: ChangeEvent<HTMLInputElement>) {
+    if (
+      event.currentTarget.files !== null &&
+      event.currentTarget.files.item(0) !== null
+    ) {
+      setFiles(event.currentTarget.files[0].name)
     }
-  }
+  } */
 
   return (
     <>
@@ -33,15 +33,9 @@ export function InputFile({ placeholder }: InputFileProps) {
         onClick={handleOpenAttachFile}
       >
         <FiLink className="size-5" />
-        {files?.length > 0 ? files?.item(0)?.name : placeholder}
+        {placeholder}
       </button>
-      <input
-        className="hidden"
-        type="file"
-        name=""
-        onChange={handleInputFileChange}
-        ref={inputFileRef}
-      />
+      <input className="hidden" type="file" name="" ref={inputFileRef} />
     </>
   )
 }

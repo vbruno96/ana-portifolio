@@ -71,10 +71,11 @@ export default function About() {
           </h2>
           <div className="text-lg text-[#212121] [&>*:not(:last-child)]:mb-3">
             <p>
-              Hello! I'm a UX/UI designer passionate about creating incredible
-              experiences! With <strong>4+ years of experience</strong> in the
-              design world, I currently live in Brazil, where I am also studying
-              Analysis and Systems Development.
+              Hello! I&apos;m a UX/UI designer passionate about creating
+              incredible experiences! With{' '}
+              <strong>4+ years of experience</strong> in the design world, I
+              currently live in Brazil, where I am also studying Analysis and
+              Systems Development.
             </p>
 
             <p>
@@ -119,7 +120,7 @@ export default function About() {
                 UX/UI Designer PL - 2023 / Currently
               </span>
               <p>
-                Responsible for the company's UX/UI team and supporting the
+                Responsible for the company&apos;s UX/UI team and supporting the
                 professional development of the team (4 people).
               </p>
               <p>
