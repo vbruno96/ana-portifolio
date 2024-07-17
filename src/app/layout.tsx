@@ -31,8 +31,8 @@ export default function RootLayout({
     >
       <body className="font-inter">
         <Sidebar />
-        <main className="ml-[9.6875rem] w-[calc(100vw-9.6875rem)] pl-[7.5rem] pr-[3.125rem] pt-10">
-          <header className="flex items-center justify-end gap-6 pr-9">
+        <main className="ml-[9.6875rem] pt-10">
+          <header className="flex items-center justify-end gap-6 pr-9 2xl:mx-auto 2xl:max-w-[1440px] 2xl:pr-0">
             <button className="font-base rounded-lg px-4 py-[0.625rem] text-black transition hover:bg-purple hover:bg-opacity-15 hover:font-semibold">
               Português - Br
             </button>

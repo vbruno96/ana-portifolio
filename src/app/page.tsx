@@ -8,7 +8,7 @@ import heroImg from './assets/hero-image.png'
 
 export default function Home() {
   return (
-    <section className="flex items-center pt-[3.875rem] 2xl:justify-center">
+    <section className="mx-auto flex items-center pl-[7.5rem] pr-[3.125rem] pt-[3.875rem] 2xl:max-w-[1440px] 2xl:justify-between 2xl:px-0">
       <div className="flex-shrink flex-grow-0 basis-[36.1875rem] text-lg">
         <h1 className="mb-11 font-ibm text-6xl text-blue">
           Hey, i’m Ana - A <strong className="font-bold">UI/UX Designer</strong>
