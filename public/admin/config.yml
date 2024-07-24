@@ -1,8 +1,9 @@
 local_backend: true
 
 backend:
-  name: test-repo
+  name: git-getway
   branch: main
+  publish_mode: editorial_workflow
 
 media_folder: public/images
 public_folder: /images
