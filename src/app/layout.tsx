@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, IBM_Plex_Sans } from 'next/font/google'
 import './globals.css'
-import Sidebar from './components/Sidebar'
+import { Header } from './components/Header'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -30,18 +30,8 @@ export default function RootLayout({
       className={`${inter.variable} ${ibmFlexSans.variable} antialiased`}
     >
       <body className="font-inter">
-        <Sidebar />
-        <main className="ml-[9.6875rem] pt-10">
-          <header className="flex items-center justify-end gap-6 pr-9 2xl:mx-auto 2xl:max-w-[1440px] 2xl:pr-0">
-            <button className="font-base rounded-lg px-4 py-[0.625rem] text-black transition hover:bg-purple hover:bg-opacity-15 hover:font-semibold">
-              Português - Br
-            </button>
-            <button className="font-base rounded-lg bg-purple bg-opacity-15 px-4 py-[0.625rem] font-semibold text-black transition hover:bg-purple hover:bg-opacity-15 hover:font-semibold">
-              English - US
-            </button>
-          </header>
-          {children}
-        </main>
+        <Header />
+        <main className="ml-[9.6875rem]">{children}</main>
       </body>
     </html>
   )
