@@ -6,7 +6,9 @@ import Sidebar from './Sidebar'
 import clsx from 'clsx'
 
 export function Header() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  const [screenWidth, setScreenWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 1440,
+  )
 
   function handleResizeScreen() {
     setScreenWidth(window.innerWidth)
