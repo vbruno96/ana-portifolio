@@ -40,7 +40,11 @@ export function Menu() {
               },
             )}
           >
-            <Link className="font-ibm text-base uppercase" href="/">
+            <Link
+              className="font-ibm text-base uppercase"
+              href="/"
+              onClick={handleToggleMenu}
+            >
               Home
             </Link>
           </li>
@@ -52,7 +56,11 @@ export function Menu() {
               },
             )}
           >
-            <Link className="font-ibm text-base uppercase" href="/about">
+            <Link
+              className="font-ibm text-base uppercase"
+              href="/about"
+              onClick={handleToggleMenu}
+            >
               About
             </Link>
           </li>
@@ -64,7 +72,11 @@ export function Menu() {
               },
             )}
           >
-            <Link className="font-ibm text-base uppercase" href="/works">
+            <Link
+              className="font-ibm text-base uppercase"
+              href="/works"
+              onClick={handleToggleMenu}
+            >
               Works
             </Link>
           </li>
@@ -76,7 +88,11 @@ export function Menu() {
               },
             )}
           >
-            <Link className="font-ibm text-base uppercase" href="/contact">
+            <Link
+              className="font-ibm text-base uppercase"
+              href="/contact"
+              onClick={handleToggleMenu}
+            >
               Contact
             </Link>
           </li>
