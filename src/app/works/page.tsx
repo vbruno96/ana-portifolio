@@ -56,7 +56,7 @@ export default function Works() {
           <div className="h-[10.75rem] w-[12.8125rem] bg-purple lg:h-[15.5rem] lg:w-[19.6875rem]" />
         </Link>
       </div>
-      <button className="mx-auto block rounded-lg bg-blue px-5 py-2 text-sm text-white lg:px-10 lg:py-4 lg:text-lg">
+      <button className="mx-auto block rounded-lg bg-blue px-5 py-2 text-sm text-white hover:bg-transparent hover:text-blue hover:ring-1 hover:ring-blue lg:px-10 lg:py-4 lg:text-lg">
         Load more
       </button>
     </section>

@@ -47,7 +47,7 @@ export default function Contact() {
             ></textarea>
           </div>
           <button
-            className="rounded-md bg-blue px-10 py-4 text-lg font-medium text-white"
+            className="rounded-md bg-blue px-10 py-4 text-lg font-medium text-white hover:bg-transparent hover:text-off-white hover:ring-1 hover:ring-off-white"
             type="submit"
           >
             Submit now

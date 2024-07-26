@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <Link
           href="/contact"
-          className="block rounded-md bg-blue px-10 py-4 text-center text-white transition-colors hover:bg-purple sm:inline"
+          className="transition-color block rounded-md bg-blue px-10 py-4 text-center text-white hover:bg-transparent hover:text-blue hover:ring-1 hover:ring-blue sm:inline"
         >
           Let&apos;s talk with me
         </Link>
