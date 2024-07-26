@@ -31,7 +31,13 @@ export default function RootLayout({
     >
       <body className="font-inter">
         <Header />
-        <main className="ml-[9.6875rem]">{children}</main>
+        <main className="lg:ml-[9.6875rem]">{children}</main>
+        <div className="lg:hidden">
+          <div className="bg-gray h-px bg-opacity-10" />
+          <footer className="text-gray py-2.5 text-center text-xs">
+            <span>Copyright &copy;{new Date().getFullYear()}</span>
+          </footer>
+        </div>
       </body>
     </html>
   )

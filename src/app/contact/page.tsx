@@ -1,14 +1,13 @@
 import Link from 'next/link'
 import { Headings } from '../components/Headings'
-import { InputFile } from './components/InputFile'
 
 export default function Contact() {
   return (
-    <section className="pl-[105px] pr-9 2xl:mx-auto 2xl:max-w-[1440px] 2xl:px-0">
+    <section className="px-4 lg:px-9 xl:pl-[105px] 2xl:mx-auto 2xl:max-w-[1440px] 2xl:px-0">
       <Headings title="Reach Out Me" subtitle="Contact" />
-      <div className="flex flex-wrap gap-20">
-        <div className="w-[22.1875rem] space-y-32 font-ibm">
-          <div className="space-y-5 text-3xl font-bold text-black">
+      <div className="relative flex flex-wrap gap-[3.125rem] lg:gap-20">
+        <div className="grow space-y-[3.125rem] font-ibm lg:space-y-32 xl:w-[22.1875rem] xl:flex-initial">
+          <div className="space-y-0 text-lg font-bold text-black lg:space-y-5 lg:text-3xl">
             <Link className="block" href="#">
               +55 31 98728-1657
             </Link>
@@ -16,14 +15,14 @@ export default function Contact() {
               anappaivaux@gmail.com
             </Link>
           </div>
-          <div className="space-x-6 font-medium uppercase text-purple">
+          <div className="hidden space-x-6 font-medium uppercase text-purple lg:block">
             <Link href="#">Instagram</Link>
             <Link href="#">Linkedin</Link>
             <Link href="#">Behance</Link>
           </div>
         </div>
-        <form className="flex-1 space-y-14 rounded-lg bg-purple px-12 pb-14 pt-10 font-ibm">
-          <span className="text-3xl font-bold text-white">
+        <form className="grow space-y-14 rounded-lg bg-purple px-12 pb-14 pt-10 font-ibm">
+          <span className="text-base font-bold text-white lg:text-3xl">
             Interested in working with me? <br />
             Drop me a message!
           </span>
@@ -46,7 +45,6 @@ export default function Contact() {
               id=""
               placeholder="Message"
             ></textarea>
-            <InputFile placeholder="Attach File" />
           </div>
           <button
             className="rounded-md bg-blue px-10 py-4 text-lg font-medium text-white"
@@ -55,6 +53,11 @@ export default function Contact() {
             Submit now
           </button>
         </form>
+        <div className="w-full space-x-6 pb-[4.375rem] pt-5 text-center text-xs font-medium uppercase text-purple lg:hidden lg:text-base">
+          <Link href="#">Instagram</Link>
+          <Link href="#">Linkedin</Link>
+          <Link href="#">Behance</Link>
+        </div>
       </div>
     </section>
   )

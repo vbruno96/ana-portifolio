@@ -19,7 +19,7 @@ export function Menu() {
 
   return (
     <div
-      className="group fixed w-full bg-purple px-4 py-6"
+      className="group fixed z-50 w-full bg-purple px-4 py-6"
       data-menu-open={isOpen}
     >
       <div className="flex items-center justify-between">
@@ -30,8 +30,8 @@ export function Menu() {
           <span className="absolute block h-[2.5px] w-full rounded-full bg-off-white transition-all ease-in-out before:absolute before:-top-1.5 before:block before:h-[2.5px] before:w-full before:rounded-full before:bg-off-white before:transition-all before:ease-in-out after:absolute after:top-1.5 after:block after:h-[2.5px] after:w-full after:rounded-full after:bg-off-white after:transition-all after:ease-in-out group-data-[menu-open=true]:rotate-45 group-data-[menu-open=true]:before:top-0 group-data-[menu-open=true]:before:w-0 group-data-[menu-open=true]:after:top-0 group-data-[menu-open=true]:after:rotate-90" />
         </button>
       </div>
-      <nav className="max-h-[11.25rem] w-full overflow-hidden transition-all duration-300 ease-in group-data-[menu-open=false]:max-h-0 group-data-[menu-open=false]:opacity-0">
-        <ul className="mt-6 max-w-[4.375rem] space-y-5 text-white">
+      <nav className="max-h-[12.75rem] w-full overflow-hidden transition-all duration-300 ease-in group-data-[menu-open=false]:max-h-0 group-data-[menu-open=false]:opacity-0">
+        <ul className="my-6 max-w-20 space-y-5 text-white">
           <li
             className={clsx(
               'relative after:absolute after:-bottom-1 after:block after:h-1 after:w-10/12 after:origin-left after:scale-x-0 after:bg-gradient-to-tr after:from-pink after:to-[#EBEBEB] after:transition after:duration-300 hover:font-bold after:hover:scale-x-100',

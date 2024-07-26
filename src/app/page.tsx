@@ -8,9 +8,9 @@ import heroImg from './assets/hero-image.png'
 
 export default function Home() {
   return (
-    <section className="mx-auto flex items-center pl-[7.5rem] pr-[3.125rem] pt-[3.875rem] 2xl:max-w-[1440px] 2xl:justify-between 2xl:px-0">
-      <div className="flex-shrink flex-grow-0 basis-[36.1875rem] text-lg">
-        <h1 className="mb-11 font-ibm text-6xl text-blue">
+    <section className="mx-auto flex flex-wrap items-center justify-center gap-16 px-4 pt-[3.875rem] lg:pl-[3.125rem] lg:pr-[3.125rem] xl:flex-nowrap xl:gap-0 xl:pl-[7.5rem] 2xl:max-w-[1440px] 2xl:justify-between 2xl:px-0">
+      <div className="flex-1 text-lg xl:flex-shrink xl:flex-grow-0 xl:basis-[36.1875rem]">
+        <h1 className="mb-11 font-ibm text-4xl text-blue sm:text-6xl">
           Hey, i’m Ana - A <strong className="font-bold">UI/UX Designer</strong>
         </h1>
         <div className="mb-12 [&>*:first-child]:mb-7 [&>*:first-child]:font-semibold">
@@ -22,11 +22,11 @@ export default function Home() {
         </div>
         <Link
           href="/contact"
-          className="rounded-md bg-blue px-10 py-4 text-white transition-colors hover:bg-purple"
+          className="block rounded-md bg-blue px-10 py-4 text-center text-white transition-colors hover:bg-purple sm:inline"
         >
           Let&apos;s talk with me
         </Link>
-        <div className="mt-16 flex items-center gap-12 text-lg font-medium text-black">
+        <div className="mt-16 flex flex-wrap items-center gap-2.5 text-lg font-medium text-black sm:gap-12">
           <Link href="tel:55319987281657" className="flex items-center gap-3">
             <span className="flex h-8 w-8 rotate-45 items-center justify-center rounded-full bg-black bg-opacity-5 text-purple">
               <FaVoicemail />

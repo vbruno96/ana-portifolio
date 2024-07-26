@@ -5,11 +5,13 @@ interface HeadingsProps {
 
 export function Headings({ subtitle, title }: HeadingsProps) {
   return (
-    <>
-      <span className="mb-4 block font-ibm text-lg font-semibold italic text-blue">
+    <div className="mb-8 space-y-2.5 lg:mb-[8.5rem] lg:space-y-4">
+      <span className="inline-block font-ibm text-sm font-semibold italic text-blue lg:text-lg">
         {subtitle}
       </span>
-      <h1 className="mb-11 font-ibm text-5xl font-bold text-blue">{title}</h1>
-    </>
+      <h1 className="font-ibm text-3xl font-bold text-blue lg:text-5xl">
+        {title}
+      </h1>
+    </div>
   )
 }

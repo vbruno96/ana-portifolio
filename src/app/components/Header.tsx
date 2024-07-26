@@ -23,16 +23,16 @@ export function Header() {
       {screenWidth > 1023 ? <Sidebar /> : <Menu />}
       <div
         className={clsx(
-          'flex items-center justify-end gap-6 pr-9 pt-10 2xl:mx-auto 2xl:max-w-[1440px] 2xl:pr-0',
+          'flex items-center justify-end gap-4 px-4 lg:gap-6 lg:pr-9 lg:pt-10 2xl:mx-auto 2xl:max-w-[1440px] 2xl:pr-0',
           {
             'pt-[8rem]': screenWidth <= 1023,
           },
         )}
       >
-        <button className="font-base rounded-lg px-4 py-[0.625rem] text-black transition hover:bg-purple hover:bg-opacity-15 hover:font-semibold">
+        <button className="rounded-lg px-4 py-1.5 text-xs text-black transition hover:bg-purple hover:bg-opacity-15 hover:font-semibold lg:py-[0.625rem] lg:text-base">
           Português - Br
         </button>
-        <button className="font-base rounded-lg bg-purple bg-opacity-15 px-4 py-[0.625rem] font-semibold text-black transition hover:bg-purple hover:bg-opacity-15 hover:font-semibold">
+        <button className="rounded-lg bg-purple bg-opacity-15 px-4 py-[0.625rem] text-xs font-semibold text-black transition hover:bg-purple hover:bg-opacity-15 hover:font-semibold lg:text-base">
           English - US
         </button>
       </div>

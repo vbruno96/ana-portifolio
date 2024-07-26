@@ -7,46 +7,44 @@ import { TbUserSquare } from 'react-icons/tb'
 import { LiaMapMarkerSolid } from 'react-icons/lia'
 
 import aboutImage from '../assets/about-image.png'
+import { Headings } from '../components/Headings'
 
 export default function About() {
   return (
     <>
-      <section className="2xl:px-auto flex gap-14 pb-32 pl-[7.5rem] pr-[3.125rem] 2xl:mx-auto 2xl:max-w-[calc(1440px-9.6875rem)] 2xl:justify-between 2xl:px-0">
-        <div className="flex-shrink-0 font-ibm">
-          <span className="mb-4 block text-lg font-semibold italic text-blue">
-            Nice to meet you!
-          </span>
-          <h1 className="mb-11 text-5xl font-bold text-blue">About</h1>
+      <section className="2xl:px-auto flex flex-wrap gap-14 px-4 pb-32 lg:px-[3.125rem] xl:flex-nowrap xl:pl-[7.5rem] 2xl:mx-auto 2xl:max-w-[1440px] 2xl:justify-between 2xl:px-0">
+        <div className="w-full flex-shrink-0 font-ibm xl:w-auto">
+          <Headings title="About Me" subtitle="Nice to meet you!" />
           <Image
             src={aboutImage}
             alt="Pessoa sorrindo acenando"
             className="mx-auto mb-8"
           />
-          <h3 className="mb-3 text-center text-5xl font-bold text-blue">
+          <h3 className="mb-3 text-center text-3xl font-bold text-blue lg:text-5xl">
             Ana Paula Paiva
           </h3>
-          <p className="mb-4 text-center text-lg font-medium text-[#212121]">
+          <p className="mb-4 text-center text-base font-medium text-[#212121] lg:text-lg">
             UI/UX Designer
           </p>
           <Link
-            className="flex items-center justify-center gap-2 text-lg font-medium underline"
+            className="flex items-center justify-center gap-2 text-base font-medium underline lg:text-lg"
             href="/"
           >
             Donwload CV{' '}
-            <BsFillArrowUpRightSquareFill className="text-[1.5rem]" />
+            <BsFillArrowUpRightSquareFill className="text-base lg:text-[1.5rem]" />
           </Link>
         </div>
-        <div className="pt-[7.625rem]">
-          <div className="mb-9 grid grid-cols-2 grid-rows-2 gap-x-7 gap-y-6 border-b border-b-black pb-8 text-lg">
+        <div className="xl:pt-[7.625rem]">
+          <div className="mb-9 grid grid-cols-1 gap-x-7 gap-y-6 border-b border-b-black pb-8 text-lg lg:grid-cols-2 lg:grid-rows-2">
             <Link href="tel:55319987281657" className="flex items-center gap-3">
               <span className="flex h-10 w-10 rotate-45 items-center justify-center rounded-full bg-black bg-opacity-5 font-medium text-purple">
-                <FaVoicemail className="text-[1.25rem]" />
+                <FaVoicemail className="text-base lg:text-[1.25rem]" />
               </span>
               +55 31 98728157
             </Link>
             <p className="flex items-center gap-3">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-black bg-opacity-5 font-medium text-purple">
-                <TbUserSquare className="text-[1.25rem]" />
+                <TbUserSquare className="text-base lg:text-[1.25rem]" />
               </span>
               24 yrs
             </p>
@@ -55,13 +53,13 @@ export default function About() {
               className="flex items-center gap-3"
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-black bg-opacity-5 font-medium text-purple">
-                <BsEnvelope className="text-[1.25rem]" />
+                <BsEnvelope className="text-base lg:text-[1.25rem]" />
               </span>
               anappaivaux@outlook.com
             </Link>
             <p className="flex items-center gap-3">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-black bg-opacity-5 font-medium text-purple">
-                <LiaMapMarkerSolid className="text-[1.25rem]" />
+                <LiaMapMarkerSolid className="text-base lg:text-[1.25rem]" />
               </span>
               Minas Gerais, Brazil
             </p>
@@ -69,7 +67,7 @@ export default function About() {
           <h2 className="mb-2 font-ibm text-xl font-bold text-blue">
             About me
           </h2>
-          <div className="text-lg text-[#212121] [&>*:not(:last-child)]:mb-3">
+          <div className="text-sm text-[#212121] lg:text-lg [&>*:not(:last-child)]:mb-3">
             <p>
               Hello! I&apos;m a UX/UI designer passionate about creating
               incredible experiences! With{' '}
@@ -99,20 +97,20 @@ export default function About() {
         </div>
       </section>
       <section className="bg-[#F9F7FA]">
-        <div className="pb-[3.375rem] pl-[7.5rem] pr-[3.125rem] pt-[2.875rem] 2xl:mx-auto 2xl:max-w-[calc(1440px-9.6875rem)] 2xl:px-0">
-          <span className="mb-8 block font-ibm text-base font-bold text-[#5A5A5A]">
+        <div className="px-4 pb-[3.375rem] pt-[2.875rem] lg:px-[3.125rem] xl:pl-[7.5rem] 2xl:mx-auto 2xl:max-w-[1440px] 2xl:px-0">
+          <span className="mb-8 hidden font-ibm text-base font-bold text-[#5A5A5A] lg:block">
             Experience
           </span>
-          <h2 className="mb-5 font-ibm text-5xl font-bold text-blue">
+          <h2 className="mb-5 font-ibm text-xl font-bold text-blue lg:text-5xl">
             My Experience
           </h2>
-          <p className="mb-[3.125rem] text-lg text-[#535353]">
+          <p className="mb-[3.125rem] text-sm text-[#535353] lg:text-lg">
             My main focus is to explore the universe of UX/UI Design, crafting
             exceptional experiences and enhancing the accessibility of
             applications for diverse user profiles.
           </p>
-          <div className="flex gap-14">
-            <div className="flex-1 rounded-[20px] border border-[#EFE8F5] bg-white py-6 pl-5 pr-12 text-sm">
+          <div className="flex flex-wrap gap-14 xl:flex-nowrap">
+            <div className="w-full rounded-[20px] border border-[#EFE8F5] bg-white py-6 pl-5 pr-12 text-sm xl:w-auto xl:flex-1">
               <h3 className="mb-2 text-lg font-bold text-[#000]">
                 Group Software
               </h3>
@@ -142,7 +140,7 @@ export default function About() {
                 interfaces. User testing and process documentation.
               </p>
             </div>
-            <div className="flex-1 rounded-[20px] border border-[#EFE8F5] bg-white py-6 pl-5 pr-12 text-sm">
+            <div className="w-full rounded-[20px] border border-[#EFE8F5] bg-white py-6 pl-5 pr-12 text-sm xl:w-auto xl:flex-1">
               <h3 className="mb-2 text-lg font-bold text-[#000]">BHS</h3>
               <span className="mb-5 block text-base text-[#535353]">
                 Power Platform - UX/UI Consultant Jr - 2020 / 2022
@@ -160,11 +158,11 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="pb-16 pl-[7.5rem] pr-[3.125rem] pt-11 2xl:mx-auto 2xl:max-w-[calc(1440px-9.6875rem)] 2xl:px-0">
-        <div className="flex justify-between rounded-[20px] bg-[#F6F4EC] pb-12 pt-8 2xl:justify-evenly">
-          <div className="pl-14">
+      <section className="px-4 pb-16 pt-11 lg:px-[3.125rem] xl:pl-[7.5rem] 2xl:mx-auto 2xl:max-w-[1440px] 2xl:px-0">
+        <div className="flex flex-wrap justify-between rounded-[20px] bg-[#F6F4EC] px-4 pb-12 pt-8 xl:px-0 2xl:justify-evenly">
+          <div className="w-full xl:w-auto xl:pl-14">
             <h4 className="mb-5 text-lg font-bold text-[#000]">Skills</h4>
-            <div className="w-80">
+            <div className="text-sm xl:w-80 xl:text-base">
               <p>Discovery research</p>
               <p>Prioritization - MVP</p>
               <p>Persona and jorney mapping</p>
@@ -179,9 +177,10 @@ export default function About() {
               <p>Design Thinking</p>
             </div>
           </div>
-          <div className="relative pl-14 before:absolute before:-left-8 before:bottom-0 before:top-0 before:mt-auto before:block before:h-80 before:border-l before:border-[#DCD3B7] after:absolute after:bottom-0 after:right-8 after:top-0 after:mt-auto after:block after:h-80 after:border-l after:border-[#DCD3B7]">
+          <div className="my-[1.875rem] h-px w-full bg-[#DCD3B7] xl:hidden" />
+          <div className="relative w-full before:absolute before:block before:border-[#DCD3B7] after:border-[#DCD3B7] xl:w-auto xl:pl-14 xl:before:-left-8 xl:before:bottom-0 xl:before:top-0 xl:before:mt-auto xl:before:h-80 xl:before:border-l xl:after:absolute xl:after:bottom-0 xl:after:right-8 xl:after:top-0 xl:after:mt-auto xl:after:block xl:after:h-80 xl:after:border-l">
             <h4 className="mb-5 text-lg font-bold text-[#000]">Tools</h4>
-            <div className="w-80">
+            <div className="text-sm xl:w-80 xl:text-base">
               <p>Figma</p>
               <p>Sketch</p>
               <p>Maze Design</p>
@@ -195,9 +194,10 @@ export default function About() {
               <p>SharePoint</p>
             </div>
           </div>
-          <div>
+          <div className="my-[1.875rem] h-px w-full bg-[#DCD3B7] xl:hidden" />
+          <div className="w-full xl:w-auto">
             <h4 className="mb-5 text-lg font-bold text-[#000]">Languages</h4>
-            <div className="w-80">
+            <div className="text-sm xl:w-80 xl:text-base">
               <p>Portuguese - Native</p>
               <p>English - Advanced C1</p>
             </div>
