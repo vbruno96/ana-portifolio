@@ -5,12 +5,17 @@ backend:
   branch: main
   publish_mode: editorial_workflow
 
-media_folder: public/images
-public_folder: /images
+media_folder: public/uploads
+public_folder: /uploads
+i18n:
+  structure: single_file
+  locales: [pt-br, en]
+  default_locale: pt-br
 
 collections:
   - name: "config"
     label: "Config"
+    i18n: true
     delete: false
     editor:
       preview: false
@@ -40,10 +45,11 @@ collections:
               widget: "string"
   - name: "pages"
     label: "Pages"
+    i18n: true
     files:
       - name: "home"
         label: "Home"
-        file: "store/home.yml"
+        file: "store/home.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Content, name: content, widget: markdown}
@@ -51,3 +57,107 @@ collections:
           - {label: Phone, name: phone, widget: string}
           - {label: Email, name: email, widget: string}
           - {label: Image, name: image, widget: image}
+      - name: "about"
+        label: About
+        file: store/about.md
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - label: Profile
+            name: profile
+            widget: object
+            fields:
+              - {label: Avatar, name: avatar, widget: image}
+              - {label: Name, name: name, widget: string}
+              - {label: Ocuppation, name: occupation, widget: string}
+              - {label: Resume, name: resume, widget: file}
+              - {label: Phone, name: phone, widget: string}
+              - {label: Email, name: email, widget: string}
+              - {label: Age, name: age, widget: string}
+              - {label: Address, name: address, widget: string}
+              - label: Describe
+                name: describe
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Content, name: content, widget: markdown}
+          - label: Experiences
+            name: experiences
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+              - {label: Exerpt, name: exerpt, widget: text}
+              - label: Jobs
+                name: jobs
+                widget: list
+                fields:
+                  - {label: Company, name: company, widget: string}
+                  - label: Postions
+                    name: positions
+                    widget: list
+                    fields:
+                      - {label: Ocuppation, name: occupation, widget: string}
+                      - {label: Describe, name: describe, widget: text, required: false}
+          - label: Knowledges
+            name: knowledges
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - label: Knowledges list
+                name: knowledgesList
+                widget: list
+                summary: "{{fields.knowledges.name}}"
+                fields:
+                  - {label: Name, name: name, widget: string}
+      - name: "works"
+        label: Works
+        file: store/works.md
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - label: Projects
+            name: projects
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Tag, name: tag, widget: string}
+              - {label: Link, name: link, widget: string}
+              - {label: Cover, name: cover, widget: image}
+          - {label: BtnLoadText, name: btnLoadText, widget: string}
+      - name: "contact"
+        label: "Contact"
+        file: "store/contact.md"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Phone, name: phone, widget: string}
+          - {label: Email, name: email, widget: string}
+          - label: Social Links
+            name: socialLinks
+            widget: list
+            fields:
+              - {label: Social Name, name: name, widget: string}
+              - {label: Social Link, name: link, widget: string}
+          - label: Form Contact
+            name: formContact
+            widget: object
+            fields:
+              - {label: FormText, name: formText, widget: string}
+              - label: InputName
+                name: inputName
+                widget: object
+                fields:
+                  - {label: Placeholder, name: placeholder, widget: string}
+              - label: InputEmail
+                name: inputEmail
+                widget: object
+                fields:
+                  - {label: Placeholder, name: placeholder, widget: string}
+              - label: InputMessage
+                name: inputMessage
+                widget: object
+                fields:
+                  - {label: Placeholder, name: placeholder, widget: string}
+              - {label: BtnText, name: btnText, widget: string}
+
