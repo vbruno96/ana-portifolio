@@ -13,7 +13,7 @@ pt-br:
 en:
   title: Olá, eu sou Ana - A UI/UX Designerd
   content: >-
-    **Desinging for impact, business, and users.**
+    **Designing for impact, business, and users.**
 
 
     UI/UX Design base in Brazil. I specialize in UX Design, Discovery process (design thinking, double diamond) and Visual Development.
