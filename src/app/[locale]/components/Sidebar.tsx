@@ -1,11 +1,10 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 
 import logo from '../assets/ana-paula.svg'
 import clsx from 'clsx'
-import { usePathname } from 'next/navigation'
+import { usePathname, Link } from '@/navigation'
 
 import { FaBehance, FaDribbble, FaInstagram } from 'react-icons/fa6'
 

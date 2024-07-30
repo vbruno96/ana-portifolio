@@ -1,0 +1,7 @@
+{
+  "Validations": {
+    "nameField": "Campo nome é obrigatório",
+    "emailField": "Campo email é obrigatório",
+    "MessageField": "Campo mensagem é obrigatório"
+  }
+}

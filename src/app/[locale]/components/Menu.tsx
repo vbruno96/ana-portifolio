@@ -1,8 +1,7 @@
 'use client'
 
 import clsx from 'clsx'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, Link } from '@/navigation'
 import Image from 'next/image'
 import logo from '../assets/ana-paula.svg'
 import { useState } from 'react'

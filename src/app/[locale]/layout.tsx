@@ -21,12 +21,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode
+  params: { locale: string }
 }>) {
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${inter.variable} ${ibmFlexSans.variable} antialiased`}
     >
       <body className="font-inter">

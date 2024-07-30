@@ -4,11 +4,16 @@ import { useEffect, useState } from 'react'
 import { Menu } from './Menu'
 import Sidebar from './Sidebar'
 import clsx from 'clsx'
+import { usePathname, Link } from '@/navigation'
+import { useLocale } from 'next-intl'
 
 export function Header() {
   const [screenWidth, setScreenWidth] = useState(
     typeof window !== 'undefined' ? window.innerWidth : 1440,
   )
+
+  const pathname = usePathname()
+  const locale = useLocale()
 
   function handleResizeScreen() {
     setScreenWidth(window.innerWidth)
@@ -31,12 +36,30 @@ export function Header() {
           },
         )}
       >
-        <button className="rounded-lg px-4 py-1.5 text-xs text-black transition hover:bg-purple hover:bg-opacity-15 hover:font-semibold lg:py-[0.625rem] lg:text-base">
+        <Link
+          href={pathname}
+          locale="pt-br"
+          className={clsx(
+            'rounded-lg bg-opacity-15 px-4 py-1.5 text-xs text-black transition hover:bg-purple hover:bg-opacity-15 lg:py-[0.625rem] lg:text-base',
+            {
+              'bg-purple font-semibold': locale === 'pt-br',
+            },
+          )}
+        >
           Português - Br
-        </button>
-        <button className="rounded-lg bg-purple bg-opacity-15 px-4 py-[0.625rem] text-xs font-semibold text-black transition hover:bg-purple hover:bg-opacity-15 hover:font-semibold lg:text-base">
+        </Link>
+        <Link
+          href={pathname}
+          locale="en"
+          className={clsx(
+            'rounded-lg bg-opacity-15 px-4 py-1.5 text-xs text-black transition hover:bg-purple hover:bg-opacity-15 lg:py-[0.625rem] lg:text-base',
+            {
+              'bg-purple font-semibold': locale === 'en',
+            },
+          )}
+        >
           English - US
-        </button>
+        </Link>
       </div>
     </header>
   )
