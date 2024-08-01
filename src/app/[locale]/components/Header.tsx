@@ -40,7 +40,7 @@ export function Header() {
           href={pathname}
           locale="pt-br"
           className={clsx(
-            'rounded-lg bg-opacity-15 px-4 py-1.5 text-xs text-black transition hover:bg-purple hover:bg-opacity-15 lg:py-[0.625rem] lg:text-base',
+            'rounded-lg bg-opacity-15 px-4 py-1.5 text-center text-xs text-black transition hover:bg-purple hover:bg-opacity-15 lg:py-[0.625rem] lg:text-base',
             {
               'bg-purple font-semibold': locale === 'pt-br',
             },
@@ -52,7 +52,7 @@ export function Header() {
           href={pathname}
           locale="en"
           className={clsx(
-            'rounded-lg bg-opacity-15 px-4 py-1.5 text-xs text-black transition hover:bg-purple hover:bg-opacity-15 lg:py-[0.625rem] lg:text-base',
+            'rounded-lg bg-opacity-15 px-4 py-1.5 text-center text-xs text-black transition hover:bg-purple hover:bg-opacity-15 lg:py-[0.625rem] lg:text-base',
             {
               'bg-purple font-semibold': locale === 'en',
             },
